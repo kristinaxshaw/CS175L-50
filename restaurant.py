@@ -3,7 +3,7 @@
 #CS-175L
 
 loop = 'yes'
-while loop == 'yes':
+while loop.lower() == 'yes':
 
     #declaring variables as False
     vegetarian = False
@@ -18,15 +18,15 @@ while loop == 'yes':
         vegetarian = False
 
     response2 = input("Is anyone in your party a vegan?")
-    if response2 == "yes":
+    if response2.lower() == "yes":
         vegan = True
-    elif response2 == "no":
+    elif response2.lower() == "no":
         vegan = False
 
     response3 = input("Is anyone in your party gluten free?")
-    if response3 == "yes":
+    if response3.lower() == "yes":
         gluten_free = True
-    elif response3 == "no":
+    elif response3.lower() == "no":
         gluten_free = False
 
     #displaying results
@@ -51,7 +51,7 @@ while loop == 'yes':
         print("Corner Cafe")
         print("The Chef's Kitchen")
     loop = input('Would you like to make another restaurant selection?: ')
-    if loop == 'no':
+    if loop.lower() == 'no':
         break
     
 
